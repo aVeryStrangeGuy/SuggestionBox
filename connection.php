@@ -1,5 +1,6 @@
 <?php
-$link = mysqli_connect("localhost", "alex", "alex", "suggestion");
+// This will need to be changed to cmatch your own database
+$link = mysqli_connect("localhost", "TEST", "TEST", "suggestion");
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
