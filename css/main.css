@@ -1,0 +1,329 @@
+html{
+	background-color: #5683b2;
+}
+
+/*
+* Header
+*/
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  transition: min-height 0.3s;
+  padding: 0 10px 0 10px;
+  background-color: white;
+
+}
+.header_title {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  font-size: 28px;
+  display: inline-block;
+  color: #212121;
+  text-align: center;
+  color: #003B7B;
+}
+
+.header_logo {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+/*
+* Nav bar
+*/
+.nav_bar{
+	overflow: auto;
+
+}
+
+.nav_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 10px; 
+    line-height: 30px;	 
+}
+
+.nav_bar li{
+	width:25%;
+	float: left;
+	background-color: white;
+	margin: 10px 0 10px 0;
+	background-color: white;
+}
+
+.nav_bar li a {
+    display: block;
+    color: #369;
+    text-decoration: none;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.admin_nav li{
+	width:50%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	list-style-type:none;
+
+
+}
+.admin_nav ul{
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding: 0px;
+}
+
+/* Change the link color on hover */
+.nav_bar li a:hover {
+    background-color: #369;
+    color: white;
+}
+
+.nav_bar .active a{
+    color: #f78b33;
+}
+
+
+/*
+*	Main Content
+*/
+
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.content {
+	min-height: 520px;
+	padding: 10px;
+	overflow: auto;
+}
+
+/*
+*	Alert messages
+*/
+.alert{
+	padding: 30px 0 30px 0;
+	text-align: center;
+	background-color: #5683b2;
+	width:60%;
+	margin-top: 10px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-style: groove;
+    color: white;
+}
+
+
+/*
+*	Form for suggestions.php
+*/
+
+.form_legend, .form_suggestion_label{
+	text-align: center;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+.form_label{
+	width: 30%;
+	display: inline-block;
+}
+
+.form_field {
+	width: 65%;
+	display: inline-block;
+}
+
+.form_name_radio {
+	margin-left:  30.5%;
+}
+
+.form_suggestion_field{
+	width: 100%;
+	max-width: 800px;
+	padding: 0;
+}
+
+.form_button{
+	width: 100%;
+	text-align: center;
+}
+
+.form_button input{
+	width: 50%;
+	text-align: center;
+	height: 30px;
+
+}
+
+/*
+*	Review suggestion for submitted.php
+*/
+.reviewer{
+	display: inline-block;
+	width: 100%;
+	border-top: groove;
+	border-bottom: groove;
+	border-width: 3px;
+	padding: 10px 0 10px 0;
+}
+
+.review{
+	padding-top: 10px;
+	width: 60%;
+	max-width: 600px;
+	float: left;
+
+}
+
+.response{
+	width: 40%;
+	max-width: 170px;
+	float: right;
+	padding-top: 10px;
+}
+
+.rating_arrows{
+	width: 30%;
+	float: left;
+	height: 100%
+}
+
+.rating{
+	height: 100%;
+	padding-top: 19px;
+	font-size: 1.5em;
+	float: left;
+}
+
+.approve_deny_label{
+	padding-top: 10px;
+}
+
+.approve_deny{
+	width: 25%;
+	float: left;
+	height: 100%;
+	min-width: 35px;
+}
+
+.admin_remove{
+	width: 35px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+    float: right;
+    padding-top: 10px;
+}
+
+.green_text{
+	color: green;
+}
+
+.red_text{
+	color: red;
+}
+
+/*
+* Login_page.php
+*/
+
+.login_container{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.login {
+	width: 300px;
+	text-align: center; 
+	background-color: #5683b2;
+	display: inline-block;
+	color: white;
+	border-style: groove;
+	border-color: lightgrey;
+}
+
+.logged_in{
+	text-align: right;
+	padding-bottom: 10px;
+}
+
+/*
+*	Responsive for all
+*/
+
+@media screen and (min-width: 850px) {
+  main, .content, .nav_bar, header_title  {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*
+*	Page number css
+*/
+
+.current_page{
+	color: red; 
+	min-width: 20px; 
+	padding-left: 5px; 
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.pages{
+	min-width: 20px;
+	padding-left: 5px;
+	display: inline-block;
+	text-align: center;
+	bottom:10px;
+	position: relative;
+}
+
+.pagenum_wrap{
+	width:100%;
+	text-align: center;
+	height: 35px;
+}
+
+.pagenum{
+	width:55%;
+	min-width: 330px;
+	margin: 0 auto;
+
+}
+
+/*
+*	Responsive for suggestions.php
+*/
+
+@media screen and (max-width: 500px) {
+.nav_bar li{
+	width:100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
+.nav_bar{
+	float: clear;
+	}
+.content {
+	min-height: 100px;
+	padding: 10px;
+}
+
+}
